@@ -31,9 +31,7 @@ static st_sub_node_t* st_sub_free_list;
 static st_sub_node_t* st_sub_list[ST_MAX_SIGNALS];
 static uint8_t st_sub_pool_idx = 0U;
 
-static st_timer_t  st_tmr_pool[ST_MAX_TIMERS];
 static st_timer_t* st_tmr_head;
-
 
 /*******************************************************************************
  * Function implementation - local ('static')
@@ -170,7 +168,6 @@ void st_init(st_idle_t fn_idle)
   memset(st_task_reg, 0, sizeof(st_task_reg));
   memset(st_sub_pool, 0, sizeof(st_sub_pool));
   memset(st_sub_list, 0, sizeof(st_sub_list));
-  memset(st_tmr_pool, 0, sizeof(st_tmr_pool));
   
   st_task_cnt      = 0U;
   st_sub_free_list = NULL;

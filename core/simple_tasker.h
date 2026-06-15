@@ -22,7 +22,6 @@
 #define ST_MAX_TASKS         10U
 #define ST_MAX_SIGNALS       16U
 #define ST_MAX_SUBS          12U
-#define ST_MAX_TIMERS        12U
 
 /* Helper macro to calculate required chunks for a given byte size */
 #define ST_EVENT_CHUNKS(size) (((size) + sizeof(st_event_t) - 1U) / sizeof(st_event_t))
