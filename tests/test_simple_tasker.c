@@ -1,15 +1,15 @@
-/***************************************************************************************
- * Simple Tasker — Comprehensive Unit Tests                           15.06.2026       *
- *                                                                                     *
- * Tests all public API: tasks, queues, pub/sub, timers, scheduling,                   *
- * boundary conditions, edge cases.                                                    *
- *                                                                                     *
- * Compile (MSVC):  cl test_simple_tasker.c simple_tasker.c                            *
- * Compile (GCC):   gcc -o test_simple_tasker.exe test_simple_tasker.c simple_tasker.c *
- * Run:             test_simple_tasker.exe                                             *
- **************************************************************************************/
-#include "simple_tasker.h"
-#include "example.h"
+/***********************************************************************************************
+ * Simple Tasker — Comprehensive Unit Tests                           15.06.2026               *
+ *                                                                                             *
+ * Tests all public API: tasks, queues, pub/sub, timers, scheduling,                           *
+ * boundary conditions, edge cases.                                                            *
+ *                                                                                             *
+ * Compile (MSVC):  cl test_simple_tasker.c ../core/simple_tasker.c                            *
+ * Compile (GCC):   gcc -o test_simple_tasker.exe test_simple_tasker.c ../core/simple_tasker.c *
+ * Run:             test_simple_tasker.exe                                                     *
+ ***********************************************************************************************/
+#include "../core/simple_tasker.h"
+#include "../examples/example.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
